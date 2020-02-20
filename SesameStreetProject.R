@@ -1,3 +1,9 @@
+#load needed packages
+library(DataComputing)
+library(data.table)
+
+
+#read data
 SesData = read.csv("SesameStreetData.csv", header = T)
 SesData
 attach(SesData)
@@ -53,12 +59,52 @@ boxplot(Difflet~agecat,
         col="orange",
         border="brown"
 )
-
 ##Boxplot for numbers vs. viewcat
+boxplot(Diffnumb~viewcat,
+        data=SesData,
+        main="Different boxplots for each View Category",
+        xlab="View Category",
+        ylab="Difference in Post-Pre Test for Numbers",
+        col="orange",
+        border="brown"
+)
 ##Boxplot for numbers vs. sex
+boxplot(Diffnumb~sex,
+        data=SesData,
+        main="Different boxplots for Sex",
+        xlab="Sex(1 for male, 2 for female)",
+        ylab="Difference in Post-Pre Test for Numbers",
+        col="orange",
+        border="brown"
+)
 ##Boxplot for numbers vs. setting
+boxplot(Diffnumb~setting,
+        data=SesData,
+        main="Different boxplots for each Setting",
+        xlab="Setting",
+        ylab="Difference in Post-Pre Test for Numbers",
+        col="orange",
+        border="brown"
+)
 ##Boxplot for numbers vs. viewenc
+boxplot(Diffnumb~viewenc,
+        data=SesData,
+        main="Different boxplots for each View Encourage",
+        xlab="View Encourage",
+        ylab="Difference in Post-Pre Test for Numbers",
+        col="orange",
+        border="brown"
+)
+
 ##Boxplot for numbers vs. agecat
+boxplot(Diffnumb~agecat,
+        data=SesData,
+        main="Different boxplots for each Age Category",
+        xlab="Age Category",
+        ylab="Difference in Post-Pre Test for Numbers",
+        col="orange",
+        border="brown"
+)
 
 ##Boxplot for body parts vs. viewcat
 ##Boxplot for body parts vs. sex
