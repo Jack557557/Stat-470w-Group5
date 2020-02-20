@@ -18,3 +18,16 @@ boxplot(Difflet~viewcat,
 ##Boxplot for letters vs. setting
 ##Boxplot for letters vs. viewenc
 ##Boxplot for letters vs. agecat
+
+##Boxplot for numbers vs. viewcat
+##Boxplot for numbers vs. sex
+##Boxplot for numbers vs. setting
+##Boxplot for numbers vs. viewenc
+##Boxplot for numbers vs. agecat
+
+##Boxplot for body parts vs. viewcat
+##Boxplot for body parts vs. sex
+##Boxplot for body parts vs. setting
+##Boxplot for body parts vs. viewenc
+##Boxplot for body parts vs. agecat
+
