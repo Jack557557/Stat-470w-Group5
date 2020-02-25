@@ -18,6 +18,7 @@ boxplot(Difflet~viewcat,
         ylab="Difference in Post-Pre Test for Letters",
         col="orange",
         border="brown"
+        
 )
 
 ##Boxplot for letters vs. sex
@@ -50,10 +51,10 @@ boxplot(Difflet~viewenc,
         border="brown"
 )
 
-##Boxplot for letters vs. agecat
+##Boxplot for letters vs. age
 boxplot(Difflet~agecat,
         data=SesData,
-        main="Different boxplots for each Age Category vs. Letters",
+        main="Different boxplots for each Age vs. Letters",
         xlab="Age Category",
         ylab="Difference in Post-Pre Test for Letters",
         col="orange",
@@ -96,8 +97,8 @@ boxplot(Diffnumb~viewenc,
         border="brown"
 )
 
-##Boxplot for numbers vs. agecat
-boxplot(Diffnumb~agecat,
+##Boxplot for numbers vs. age
+plot(Diffnumb~age,
         data=SesData,
         main="Different boxplots for each Age Category",
         xlab="Age Category",
@@ -105,7 +106,15 @@ boxplot(Diffnumb~agecat,
         col="orange",
         border="brown"
 )
-
+ 
+plot(Diffnumb~peabody,
+     data=SesData,
+     main="Different boxplots for each Peabody Category",
+     xlab="Age Category",
+     ylab="Difference in Post-Pre Test for Numbers",
+     col="orange",
+     border="brown"
+)
 ##Boxplot for body parts vs. viewcat
 ##Boxplot for body parts vs. sex
 ##Boxplot for body parts vs. setting
